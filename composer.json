@@ -21,5 +21,4 @@
     "autoload": {
         "psr-4": { "wrt54gl\\tabular\\": "" }
     },
-    "target-dir": "wrt54gl/yii2-tabular"
 }
