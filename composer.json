@@ -16,7 +16,7 @@
     ],
     "require": {
         "yiisoft/yii2": "*",
-        "bradvin/footable": "2.*@dev"
+        "wrt54gl/footable": "2.*@dev"
     },
     "autoload": {
         "psr-4": { "wrt54gl\\tabular\\": "" }
