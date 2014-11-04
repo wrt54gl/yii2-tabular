@@ -16,7 +16,7 @@
     ],
     "require": {
         "yiisoft/yii2": "*",
-        "fooplugins/footable": "2.*@dev"
+        "filsh/footable": "2.*@dev"
     },
     "autoload": {
         "psr-4": { "wrt54gl\\tabular\\": "" }
