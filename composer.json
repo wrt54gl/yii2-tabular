@@ -1,0 +1,25 @@
+{
+    "name": "wrt54gl/yii2-tabular",
+    "description": "tabular input for Yii2 framework",
+    "keywords": ["yii", "tabular" ,"footable"],
+    "type": "library",
+    "license": "proprietary",
+    "support": {
+        "email": "wendel@dynamo-electric.com",
+        "source": "https://github.com/wrt54gl/yii2-tabular"
+    },
+    "authors": [
+        {
+            "name": "Wendel Toews",
+            "email": "wendel@dynamo-electric.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "bravdin/footable": "2.*@dev"
+    },
+    "autoload": {
+        "psr-4": { "wrt54gl\\tabular\\": "" }
+    },
+    "target-dir": "wrt54gl/yii2-tabular"
+}
