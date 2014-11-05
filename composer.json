@@ -21,5 +21,10 @@
     "require": {
         "yiisoft/yii2": "*",
         "filsh/yii2-footable": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "wrt\\tabular\\": ""
+        }
     }
 }

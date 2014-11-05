@@ -6,12 +6,12 @@
  * Time: 11:43 AM
  */
 
-namespace wrt54gl\tabular;
+namespace wrt\tabular;
 
 use \yii;
 
 class TabularAsset extends yii\web\AssetBundle {
-    public $sourcePath = '@vendor';
+    public $sourcePath = '@wrt/tabular/assets';
 
     public $js =[
         'filsh/footable/js/footable.js',

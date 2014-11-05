@@ -7,7 +7,7 @@
  */
 
 /* @var $view yii\web\View */
-namespace wrt54gl\tabular;
+namespace wrt\tabular;
 
 use yii\base\Widget;
 use yii\helpers\Html;
