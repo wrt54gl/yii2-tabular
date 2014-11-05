@@ -14,12 +14,12 @@ class TabularAsset extends yii\web\AssetBundle {
     public $sourcePath = '@vendor';
 
     public $js =[
-        'fooplugins/footable/js/footable.js',
+        'filsh/footable/js/footable.js',
         'wrt54gl/yii2-tabular/js/TabularInput.js',
     ];
 
     public $css=[
-        'fooplugins/footable/css/footable.core.css',
+        'filsh/footable/css/footable.core.css',
     ];
     public $depends =[
         'yii\web\JqueryAsset',
