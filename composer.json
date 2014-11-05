@@ -1,7 +1,11 @@
 {
     "name": "wrt54gl/yii2-tabular",
     "description": "tabular input for Yii2 framework",
-    "keywords": ["yii", "tabular" ,"footable"],
+    "keywords": [
+        "yii",
+        "tabular",
+        "footable"
+    ],
     "type": "library",
     "license": "proprietary",
     "support": {
@@ -18,3 +22,4 @@
         "yiisoft/yii2": "*",
         "filsh/yii2-footable": "*"
     }
+}
