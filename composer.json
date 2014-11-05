@@ -14,15 +14,9 @@
             "email": "wendel@dynamo-electric.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/bradvin/FooTable"
-        }
-    ],
     "require": {
         "yiisoft/yii2": "*",
-        "fooplugins/footable": "2.*@dev"
+        "filsh/yii2-footable": "dev-master"
     },
     "autoload": {
         "psr-4": { "wrt54gl\\tabular\\": "" }
