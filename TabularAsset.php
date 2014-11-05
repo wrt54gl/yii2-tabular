@@ -11,18 +11,17 @@ namespace wrt\tabular;
 use \yii;
 
 class TabularAsset extends yii\web\AssetBundle {
-    public $sourcePath = '@vendor';
+    public $sourcePath = '@vendor/wrt54gl/yii2-tabular';
 
     public $js =[
-        //'filsh/footable/js/footable.js',
-        'wrt54gl/yii2-tabular/js/TabularInput.js',
+        'FooTable/js/footable.js',
+        'js/TabularInput.js',
     ];
 
     public $css=[
-        'filsh/footable/css/footable.core.css',
+        'FooTable/css/footable.core.css',
     ];
     public $depends =[
-        'yii\footable\FootableAsset',
         'yii\web\JqueryAsset',
     ];
 } 

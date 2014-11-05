@@ -4,7 +4,6 @@
     "keywords": [
         "yii",
         "tabular",
-        "footable"
     ],
     "type": "library",
     "license": "proprietary",
@@ -20,7 +19,6 @@
     ],
     "require": {
         "yiisoft/yii2": "*",
-        "filsh/yii2-footable": "*"
     },
     "autoload": {
         "psr-4": {
