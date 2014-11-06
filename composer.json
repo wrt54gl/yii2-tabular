@@ -19,7 +19,7 @@
     ],
     "require": {
         "yiisoft/yii2": "*",
-        "fooplugins/footable": "2.*@dev"
+        "fooplugins/footable": "*"
     },
     "autoload": {
         "psr-4": {
