@@ -6,7 +6,7 @@
         "tabular"
     ],
     "type": "library",
-    "license": "proprietary",
+    "license": "WTFPL",
     "support": {
         "email": "wendel@dynamo-electric.com",
         "source": "https://github.com/wrt54gl/yii2-tabular"
