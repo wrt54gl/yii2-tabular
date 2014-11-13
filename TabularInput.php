@@ -4,7 +4,9 @@ namespace wrt\tabular;
 use Yii;
 use yii\base\InvalidConfigException;
 use yii\grid\GridView;
+use yii\helpers\Html;
 use yii\helpers\Json;
+use yii\helpers\StringHelper;
 use yii\i18n\Formatter;
 use yii\widgets;
 
@@ -47,6 +49,21 @@ class TabularInput extends GridView{
      * @var integer the max number of rows that can be created.  no limit if not set
      */
     public $maxRows;
+
+    /**
+     * @var array this will put an add new button at the bottom of the table
+     */
+    public $footerAddButton;
+
+    /**
+     * @var string the content of the footer button
+     */
+    private $footerButtonContent;
+
+    /**
+     * @var string will hold the markup for an entire row of the table with placeholders for the row index numbers.
+     */
+    private $tableRowMarkup;
 
     public function run(){
 
@@ -91,6 +108,18 @@ class TabularInput extends GridView{
             $this->dataProvider->setModels($newModels);
         }
 
+        if ($this->footerAddButton){
+            $this->showFooter=true;
+            if (empty($this->footerAddButton['options'])){
+                $this->footerAddButton['options']=['class' => 'btn btn-primary','id'=>$this->id.'-addbutton-footer'];//StringHelper::basename($this->postModel->className()).'-tabular-addbutton'];
+            }
+            $this->footerButtonContent=Html::button($this->footerAddButton['label'],$this->footerAddButton['options']);
+        }
+
+        $this->tableRowMarkup=$this->renderTableRow($this->postModel,'key','1');
+
+        Yii::info($this->tableRowMarkup);
+
         parent::run();
 
 
@@ -106,8 +135,11 @@ class TabularInput extends GridView{
         $configure = !empty($this->fooTableOptions['configuration'])?Json::encode($this->fooTableOptions):'';
         $this->view->registerJs("
             jQuery('#{$this->options['id']} table').footable({$configure});
-            console.log(jQuery('#{$this->options['id']} table'));
         ");
+    }
+
+    public function renderTableFooter(){
+        return '<tfoot><tr><td colspan="'.sizeof($this->columns).'">'.$this->footerButtonContent.'</td></tr></tfoot>';
     }
 
 }
